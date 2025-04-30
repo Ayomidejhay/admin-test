@@ -1,6 +1,62 @@
 @import "tailwindcss";
 
-:root {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+@theme  {
+  --color-mainBg: #2a3447;
+  --color-softBg: #384256;
+  --color-darkBg: #222b3c;
+  --color-main: white;
+  --color-soft: #ddd;
+  --color-dark: #2a3447;
+}
+
+.main{
+  background-color: var(--color-mainBg);
+  font-family: "Inter", sans-serif;
+  color: var(--color-main);
+  padding: 20px 20px;
+}
+.containers{
+  display: flex;
+}
+.menuContainer{
+  width: 250px;
+  padding: 5px 20px;
+  border-right:  2px solid var(--color-softBg);
+}
+.contentContainer{
+  padding: 5px 20px;
+  
+}
+.icons{
+  display: flex;
+  align-items: center;
+}
+
+.home{
+  grid-auto-rows: minmax(130px, auto);
+}
+.box{
+  padding: 20px;
+  border-radius: 10px;
+  border:  1px solid var(--color-softBg);
+}
+
+/*.css-1e8d8dc-MuiDataGrid-toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+}*/
+
+/*:root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -24,3 +80,5 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+*/
+
