@@ -1,8 +1,8 @@
 'use client";'
 
 import React from 'react'
-import { singleProduct } from '../../data'
-import Single from '../../components/Single'
+import { singleProduct } from '../data'
+import Single from '../components/Single'
 
 function page() {
   return (
